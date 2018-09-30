@@ -42,6 +42,10 @@ final class LocalFactory: HouseFactory {
         return houses.first { $0.name.uppercased() == name.uppercased() }
     }
 
+    func house(named name: HouseName) -> House? {
+        return houses.first { $0.name.uppercased() == name.rawValue.uppercased() }
+    }
+
     var houses: [House] {
         let starkSigil = Sigil(image: UIImage(named: "codeIsComing")!,
                                description: "A grey direwolf on a white field")

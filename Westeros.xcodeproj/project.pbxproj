@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2025EA902160E6EB00AEA0ED /* House+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2025EA8F2160E6EB00AEA0ED /* House+Name.swift */; };
 		20644B5E2152DAC0000BC3C8 /* Notification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20644B5D2152DAC0000BC3C8 /* Notification+Name.swift */; };
 		206A94FA21503372003E6BFA /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206A94F821503372003E6BFA /* WikiViewController.swift */; };
 		206A94FB21503372003E6BFA /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 206A94F921503372003E6BFA /* WikiViewController.xib */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2025EA8F2160E6EB00AEA0ED /* House+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "House+Name.swift"; sourceTree = "<group>"; };
 		20644B5D2152DAC0000BC3C8 /* Notification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Name.swift"; sourceTree = "<group>"; };
 		206A94F821503372003E6BFA /* WikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
 		206A94F921503372003E6BFA /* WikiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			children = (
 				20D4E8BE214E5CE1008D3BE0 /* UIViewController+Navigation.swift */,
 				20644B5D2152DAC0000BC3C8 /* Notification+Name.swift */,
+				2025EA8F2160E6EB00AEA0ED /* House+Name.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				209C9297215FC6E200D34392 /* SeasonListViewController.swift in Sources */,
 				20C88BE9215AB4A0006B29B9 /* Episode.swift in Sources */,
 				2078A34B2141B36300055794 /* AppDelegate.swift in Sources */,
+				2025EA902160E6EB00AEA0ED /* House+Name.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
