@@ -32,6 +32,8 @@
 		209C92A0215FD35700D34392 /* EpisodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 209C929E215FD35700D34392 /* EpisodeDetailViewController.xib */; };
 		209C92A2216002F200D34392 /* SplitViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C92A1216002F200D34392 /* SplitViewDelegate.swift */; };
 		209C92A42160266E00D34392 /* TabBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C92A32160266E00D34392 /* TabBarDelegate.swift */; };
+		20B2AAD52160E92600EC8EDA /* MemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2AAD32160E92600EC8EDA /* MemberDetailViewController.swift */; };
+		20B2AAD62160E92600EC8EDA /* MemberDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20B2AAD42160E92600EC8EDA /* MemberDetailViewController.xib */; };
 		20C88BE5215AADEF006B29B9 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C88BE4215AADEF006B29B9 /* Season.swift */; };
 		20C88BE7215AAE00006B29B9 /* SeasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C88BE6215AAE00006B29B9 /* SeasonTests.swift */; };
 		20C88BE9215AB4A0006B29B9 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C88BE8215AB4A0006B29B9 /* Episode.swift */; };
@@ -83,6 +85,8 @@
 		209C929E215FD35700D34392 /* EpisodeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeDetailViewController.xib; sourceTree = "<group>"; };
 		209C92A1216002F200D34392 /* SplitViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewDelegate.swift; sourceTree = "<group>"; };
 		209C92A32160266E00D34392 /* TabBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDelegate.swift; sourceTree = "<group>"; };
+		20B2AAD32160E92600EC8EDA /* MemberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailViewController.swift; sourceTree = "<group>"; };
+		20B2AAD42160E92600EC8EDA /* MemberDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberDetailViewController.xib; sourceTree = "<group>"; };
 		20C88BE4215AADEF006B29B9 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		20C88BE6215AAE00006B29B9 /* SeasonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTests.swift; sourceTree = "<group>"; };
 		20C88BE8215AB4A0006B29B9 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
@@ -198,6 +202,8 @@
 				209C929A215FC85B00D34392 /* SeasonDetailViewController.xib */,
 				209C929D215FD35700D34392 /* EpisodeDetailViewController.swift */,
 				209C929E215FD35700D34392 /* EpisodeDetailViewController.xib */,
+				20B2AAD32160E92600EC8EDA /* MemberDetailViewController.swift */,
+				20B2AAD42160E92600EC8EDA /* MemberDetailViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -303,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2078A3552141B36600055794 /* LaunchScreen.storyboard in Resources */,
+				20B2AAD62160E92600EC8EDA /* MemberDetailViewController.xib in Resources */,
 				209C9298215FC6E200D34392 /* SeasonListViewController.xib in Resources */,
 				2078A3522141B36600055794 /* Assets.xcassets in Resources */,
 				209C929C215FC85B00D34392 /* SeasonDetailViewController.xib in Resources */,
@@ -332,6 +339,7 @@
 				209C929B215FC85B00D34392 /* SeasonDetailViewController.swift in Sources */,
 				20D4E8C3214E5E4B008D3BE0 /* Repository.swift in Sources */,
 				2091B1B22151AA610042A480 /* Constants.swift in Sources */,
+				20B2AAD52160E92600EC8EDA /* MemberDetailViewController.swift in Sources */,
 				209C92A42160266E00D34392 /* TabBarDelegate.swift in Sources */,
 				20D4E8BF214E5CE1008D3BE0 /* UIViewController+Navigation.swift in Sources */,
 				2078A3702141C1DA00055794 /* Sigil.swift in Sources */,

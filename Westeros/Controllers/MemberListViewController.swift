@@ -65,6 +65,8 @@ private extension MemberListViewController {
 extension MemberListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let person = models[indexPath.row]
+        navigationController?.pushViewController(MemberDetailViewController(person: person), animated: true)
     }
 }
 
@@ -79,6 +81,7 @@ extension MemberListViewController: UITableViewDataSource {
         let member = models[indexPath.row]
         cell.detailTextLabel?.text = member.alias
         cell.textLabel?.text = member.name
+        cell.accessoryType = .disclosureIndicator
 
         return cell
     }
