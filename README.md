@@ -1,6 +1,6 @@
 # ⚔️ Westeros
 
-* A Game of Thrones app with static content
+A Game of Thrones app with static content
 
 ## 🚀 Technology
 
