@@ -27,4 +27,26 @@ class MemberDetailViewController: UIViewController {
         title = person.name
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        NotificationCenter.default.addObserver(self,
+                                       selector: #selector(houseDidChange),
+                                       name: .houseDidChangeNotification,
+                                       object: nil)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        NotificationCenter.default.removeObserver(self,
+                                                  name: .houseDidChangeNotification,
+                                                  object: nil)
+    }
+}
+
+// MARK: - Private methods
+private extension MemberDetailViewController {
+    @objc func houseDidChange(notification: Notification) {
+        navigationController?.popViewController(animated: true)
+    }
 }

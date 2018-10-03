@@ -34,4 +34,26 @@ final class EpisodeDetailViewController: UIViewController {
         releaseDateLabel.text = formatter.string(from: episode.transmissionDate)
         title = episode.title
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(seasonDidChange),
+                                               name: .seasonDidChangeNotification,
+                                               object: nil)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        NotificationCenter.default.removeObserver(self,
+                                                  name: .seasonDidChangeNotification,
+                                                  object: nil)
+    }
+}
+
+private extension EpisodeDetailViewController {
+    @objc func seasonDidChange(notification: Notification) {
+        navigationController?.popViewController(animated: true)
+    }
 }

@@ -67,6 +67,10 @@ extension SeasonListViewController {
         collapseDetailViewController = false
         tableView.deselectRow(at: indexPath, animated: true)
         let model = models[indexPath.row]
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.post(name: .seasonDidChangeNotification,
+                                object: nil,
+                                userInfo: ["Season": model])
         guard splitViewController?.viewControllers.count == 1 else {
             delegate?.seasonListViewController(self, didSelectSeason: model)
             return

@@ -38,16 +38,10 @@ final class MemberListViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self,
+        NotificationCenter.default.addObserver(self,
                                        selector: #selector(houseDidChange),
                                        name: .houseDidChangeNotification,
                                        object: nil)
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: kHouseDidChangeNotificationName), object: nil)
     }
 }
 

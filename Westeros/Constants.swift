@@ -11,3 +11,4 @@ import Foundation
 let kHouseDidChangeNotificationName = "HouseDidChange"
 let kHouseKey = "House"
 let kLastHouse = "LastHouse"
+let kSeasonDidChangeNotificationName = "SeasonDidChange"

@@ -10,4 +10,5 @@ import UIKit
 
 extension Notification.Name {
     static let houseDidChangeNotification = Notification.Name(kHouseDidChangeNotificationName)
+    static let seasonDidChangeNotification = Notification.Name(kSeasonDidChangeNotificationName)
 }
